@@ -1,8 +1,7 @@
-version: "3"
-
+version: '3'
 services:
-  cpuminer:
+  nkn-container:
     build:
       context: .
       dockerfile: Dockerfile
-    restart: always
+    entrypoint: /root/nkn/startup.sh
